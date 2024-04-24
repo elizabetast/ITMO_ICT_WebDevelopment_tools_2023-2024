@@ -13,7 +13,7 @@ load_dotenv()
 
 # Установка основной опции sqlalchemy.url для Alembic
 config = context.config
-db_url = os.getenv("DB_URL")
+db_url = os.getenv("DB_ADMIN")
 if db_url:
     config.set_main_option("sqlalchemy.url", db_url)
 # config.set_main_option("sqlalchemy.url", 'postgresql://postgres:123@localhost/bookcross_db')
